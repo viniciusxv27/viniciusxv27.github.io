@@ -50,6 +50,11 @@ body {
   font-size: 1.5em;
   color: #5270c1;
   padding: 0.5rem;
+  transition:0.8s;
+}
+
+#logo:hover{
+  color:#0044ff;
 }
 
 #nav ul {
