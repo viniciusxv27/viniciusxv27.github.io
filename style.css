@@ -508,7 +508,7 @@ address a:hover {
 
 @media (max-width: 730px) {
   .responsive{
-    transform: translateY(-45px);
+    transform: translateY(-60px);
   }
   #nav ul {
     display: block;
