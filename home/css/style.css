@@ -1,0 +1,660 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&family=Montserrat:wght@400;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #ffffff;
+}
+
+.foto img{
+  width: 600px !important;
+}
+
+/* =============== Menu =============== */
+.fixed {
+  position: sticky;
+  top: 0;
+  background: rgb(0, 0, 0);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid #232323;
+  z-index: 1;
+}
+
+#header {
+  width: 80%;
+  margin: 0 auto;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#logo {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+  color: #5270c1;
+  padding: 0.5rem;
+  transition:0.8s;
+}
+
+#logo:hover{
+  color:#0044ff;
+}
+
+#nav ul {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#nav ul li {
+  position: relative;
+  padding-right: 10px;
+}
+
+#menu a {
+  color: #fff;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "Montserrat", sans-serif;
+}
+
+#menu a:hover {
+  color: #5270c1;
+}
+
+#nav ul li:nth-child(1)::after {
+  content: "";
+  height: 1px;
+  width: 0;
+  background: #5270c1;
+  position: absolute;
+  left: 0;
+  bottom: -9px;
+  transition: 0.5s;
+}
+
+#nav ul li:nth-child(2)::after {
+  content: "";
+  height: 1px;
+  width: 0;
+  background: #5270c1;
+  position: absolute;
+  left: 0;
+  bottom: -9px;
+  transition: 0.5s;
+}
+#nav ul li:nth-child(3)::after {
+  content: "";
+  height: 1px;
+  width: 0;
+  background: #4961dc;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+#nav ul li:nth-child(4)::after {
+  content: "";
+  height: 1px;
+  width: 0;
+  background: #4961dc;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+#nav ul li:nth-child(5)::after {
+  content: "";
+  height: 1px;
+  width: 0;
+  background: #4961dc;
+  position: absolute;
+  left: 0;
+  bottom: -9px;
+  transition: 0.5s;
+}
+
+#nav ul li:hover::after {
+  width: 100%;
+}
+
+/* =============== Introducao =============== */
+.introducao {
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 160px 0;
+  margin: 0 auto;
+}
+
+.introducao_info {
+  color: #000;
+}
+
+.introducao_info span {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.introducao_info h1 {
+  font-size: 43px;
+  line-height: 61px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.introducao_info p {
+  font-size: 18px;
+  line-height: 28px;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 15px;
+}
+.button {
+  display: inline-block;
+  padding: 15px 60px;
+  font-size: 1.1rem;
+  font-family: "Montserrat", sans-serif;
+  background: #fff;
+  color: #000;
+  border: solid 1px #000;
+  border-radius: 5px;
+  transition: 0.5s;
+  margin-right: 10px;
+}
+
+.button2, .portfolio-image{
+  border-radius: 5px;
+}
+
+.button:hover {
+  transform: translateX(3px) scale(1.1);
+  background: linear-gradient(134deg, #260088 0%, #260088 99%);
+  color: #fff;
+}
+
+.about {
+  display: inline-block;
+  padding: 15px 60px;
+  font-size: 1.1rem;
+  font-family: "Montserrat", sans-serif;
+  background: transparent;
+  color: #000;
+  border: #000 solid 1px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.about:hover {
+  background: linear-gradient(134deg, #260088 0%, #260088 99%);
+  transform: translateX(3px) scale(1.1);
+  border: hidden;
+  color: #fff;
+}
+
+#nav button {
+  visibility: hidden;
+}
+
+/* =============== Social =============== */
+.social {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.social a {
+  color: #4961dc;
+  margin-right: 20px;
+  transition: 0.5s;
+}
+
+.social a:hover {
+  color: rgb(20, 35, 255);
+}
+
+/* =============== BoxArrow =============== */
+.box {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+
+.box span:nth-child(1) {
+  animation-delay: -0.2s;
+}
+.box span:nth-child(2) {
+  animation-delay: -0.4s;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
+}
+
+/* =============== AboutMe =============== */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0 50px 0;
+}
+
+.bg {
+  background-image: url(../img/bg.svg);
+  width: 100%;
+  height: 400px;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  color: #000;
+}
+
+.container p {
+  margin-top: 10px;
+  color: #fff;
+  font-family: "Karla", sans-serif;
+  line-height: 35px;
+}
+
+/* =============== Skills =============== */
+.container {
+  width: 80%;
+  height: 400px;
+  margin-bottom: 100px;
+}
+
+#skill .container h2 {
+  margin-bottom: 100px;
+}
+
+.svgs {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* =============== Portfolio =============== */
+.portfolio .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.portfolio h2 {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.bg_portfolio h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  font-style: bold;
+  font-weight: 400;
+  color: #fff;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.container p a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.container h2{
+  color: #fff;
+}
+
+.bg_portfolio {
+  background-image: url(../img/bg.svg);
+  width: 100%;
+  height: 500px;
+  margin-bottom: 100px;
+}
+
+.bg_portfolio .container p {
+  max-width: 480px;
+  color: #fff;
+}
+
+.container .projeto {
+  display: block
+}
+
+.bg_portfolio img {
+  width: 540px;
+  height: 300px;
+}
+
+.container p {
+  font-size: 1.6rem;
+  color: #fff;
+}
+.container p a {
+  background-color: #FFF;
+  color: #000;
+  text-decoration: none;
+  padding: 0.7rem;
+  border: solid black 2px;
+  transition: all 300ms;
+}
+
+.container p a:hover {
+  color: #fff;
+  background: none;
+  border: solid #fff 1px;
+}
+
+.container a img:hover {
+  transform: rotate(5deg);
+}
+
+.container a img {
+  transition: all 300ms;
+}
+
+/* =============== ButtonToTop =============== */
+#btnTop {
+  cursor: pointer;
+  position: fixed;
+  bottom: 30px;
+  border: 0;
+  right: 30px;
+  height: 32px;
+  width: 32px;
+  background: linear-gradient(134deg, #260088 0%, #4961dc 99%);
+  border-radius: 50%;
+  display: none;
+}
+
+#btnTop img {
+  color: #fff;
+  width: 14px;
+  margin: 0 auto;
+}
+
+/* =============== Scroll =============== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #232323;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5270c1;
+  border-radius: 10px;
+}
+
+/* =============== contact =============== */
+.container-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container-contact h2{
+  margin-bottom: 20px;
+}
+
+.container-contact p {
+  margin-bottom: 20px;
+  text-align: center;
+  width: 400px;
+  color: #fff;
+  font-family: "Karla", sans-serif;
+}
+
+.container-contact a {
+  margin-bottom: 100px;
+}
+
+address a {
+  color: #260088;
+}
+
+address a:hover {
+  text-decoration: underline;
+}
+
+/* =============== Footer =============== */
+.container-footer {
+  background-color: #000;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container-footer .social {
+  margin: 0;
+}
+
+.footer p {
+  color: #fff;
+  font-family: "Karla", sans-serif;
+}
+
+/* =============== Mobile =============== */
+@media (max-width: 1200px) {
+  .foto img {
+    right: 40px !important;
+    width: 350px !important;
+    height: 350px !important;
+  }
+
+  .introducao_info h1 {
+    font-size: 30px;
+  }
+
+  .container p {
+    font-size: 16px;
+  }
+
+  .button,
+  .about {
+    padding: 10px 40px;
+  }
+}
+
+@media (max-width: 730px) {
+  .responsive{
+    transform: translateY(-20px);
+  }
+  #nav ul {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    right: 0px;
+    background-color: #232323;
+    height: 0;
+    transition: 0.6s;
+    z-index: 1000;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  #skill .container h2 {
+    margin-bottom: 70px;
+  }
+
+  .container-contact p {
+    margin-bottom: 20px;
+    width: 300px;
+  }
+
+  .container {
+    margin-bottom: 10px;
+  }
+
+  .svgs img {
+    width: 60px;
+  }
+
+  .container p {
+    line-height: 24px;
+  }
+
+  .portfolio .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .bg_portfolio img {
+    width: 278px;
+    height: 157px;
+  }
+
+  .bg_portfolio .container p {
+    text-align: center;
+    line-height: 24px;
+    font-size: 14px;
+  }
+
+  #nav.active #menu {
+    height: calc(100vh - 60px);
+    visibility: visible;
+    overflow-y: hidden;
+  }
+
+  #menu li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    margin: 40px 2.3rem;
+    border-bottom: 1px solid #5270c1;
+  }
+
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #fff;
+    gap: 0.5rem;
+  }
+
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+
+  #hamburger::after,
+  #hamburger::before {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+  #nav button {
+    visibility: visible;
+  }
+
+  #nav ul li::after {
+    display: none;
+  }
+
+  .on {
+    border: 0;
+  }
+
+  .button {
+    padding: 10px 20px;
+    margin-top: 10px;
+  }
+
+  .about {
+    padding: 10px 20px;
+  }
+
+  .foto {
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 1024px) {
+  .foto img {
+    right: 10px;
+    width: 350px;
+    height: 350px;
+  }
+} 
+
+.foto img {
+  position: absolute;
+  top: 150px;
+  right: 110px;
+  width: 400px;
+  height: 400px;
+  display: flex;
+}
