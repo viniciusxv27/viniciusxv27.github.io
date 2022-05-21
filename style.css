@@ -30,10 +30,6 @@ body {
   font-size: 20px !important;
 }
 
-.titulogrande {
-  font-size: 30px !important;
-}
-
 .fixed {
   position: sticky;
   top: 0;
@@ -519,6 +515,11 @@ address a:hover {
   .textogrande {
     font-size: 13px !important;
   }
+  
+  .titulogrande {
+    font-size: 20px !important;
+  }
+  
   .responsive{
     transform: translateY(-45px);
   }
