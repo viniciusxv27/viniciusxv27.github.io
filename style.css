@@ -516,10 +516,6 @@ address a:hover {
     font-size: 13px !important;
   }
   
-  .titulogrande {
-    font-size: 20px !important;
-  }
-  
   .responsive{
     transform: translateY(-45px);
   }
