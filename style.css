@@ -30,6 +30,10 @@ body {
   font-size: 20px !important;
 }
 
+.titulogrande {
+  font-size: 30px !important;
+}
+
 .fixed {
   position: sticky;
   top: 0;
