@@ -289,7 +289,7 @@ body {
 }
 
 .bg {
-  background-image: url(../img/bg.svg);
+  background-image: url(bg.svg);
   width: 100%;
   height: 400px;
 }
@@ -358,7 +358,7 @@ h2 {
 }
 
 .bg_portfolio {
-  background-image: url(../img/bg.svg);
+  background-image: url(bg.svg);
   width: 100%;
   height: 500px;
   margin-bottom: 100px;
