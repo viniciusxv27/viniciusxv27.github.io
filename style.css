@@ -434,7 +434,7 @@ h2 {
 }
 
 .container a img:hover {
-  transform: rotate(5deg);
+  transform: translate(-3%, 3%) scale(1.2) ;
 }
 
 .container a img {
