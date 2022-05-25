@@ -288,6 +288,17 @@ body {
   padding: 50px 0 50px 0;
 }
 
+#linha{
+  margin: 30px;
+}
+
+.containerex {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0 50px 0;
+  display: flex;
+}
+
 .bg {
   background-image: url(bg.svg);
   width: 100%;
