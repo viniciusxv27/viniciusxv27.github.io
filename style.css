@@ -693,7 +693,7 @@ address a:hover {
   }
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
   
   .bg_portfolio img {
     width: 300px;
