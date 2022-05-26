@@ -694,6 +694,12 @@ address a:hover {
 }
 
 @media (min-width: 1024px) {
+  
+  .bg_portfolio img {
+    width: 300px;
+    height: 179px;
+  }
+  
   .foto img {
     right: 10px;
     width: 350px;
