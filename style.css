@@ -267,8 +267,8 @@ body {
   display: block;
   width: 10px;
   height: 10px;
-  border-bottom: 1px solid #fff;
-  border-right: 1px solid #fff;
+  border-bottom: 1px solid #260088;
+  border-right: 1px solid #260088;
   transform: rotate(45deg);
   margin: -10px;
   animation: animate 2s infinite;
