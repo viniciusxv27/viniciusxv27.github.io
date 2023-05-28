@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+  --primary: #423E37;
+  --secondary: #e3b23c;
+  --terciario: #edebd7;
+  --fonte: 'Montserrat', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: var(--fonte);
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: var(--primary);
+}
+
+/* =============== Menu =============== */
+
+.fixed {
+  position: sticky;
+  top: 0;
+  background: var(--terciario);
+  backdrop-filter: blur(6px);
+  z-index: 1;
+}
+
+#header {
+  width: 80%;
+  margin: 0 auto;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#logo {
+  position: relative;
+  font-size: 1.5em;
+  color: var(--primary);
+  padding: 0.5rem;
+  transition:300ms;
+}
+
+#logo:hover{
+  color:var(--secondary);
+}
+
+#nav ul {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#nav ul li {
+  position: relative;
+  padding-right: 10px;
+}
+
+#menu a {
+  color: var(--primary);
+  padding: 10px;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+#menu a:hover {
+  color: var(--secondary);
+}
+
+#nav ul li:nth-child(1)::after {
+  content: "";
+  height: 1px;
+  width: 0;
+  background: var(--secondary);
+  position: absolute;
+  left: 0;
+  bottom: -9px;
+  transition: 0.5s;
+}
+
+#nav ul li:nth-child(2)::after {
+  content: "";
+  height: 1px;
+  width: 0;
+  background: var(--secondary);
+  position: absolute;
+  left: 0;
+  bottom: -9px;
+  transition: 0.5s;
+}
+#nav ul li:nth-child(3)::after {
+  content: "";
+  height: 1px;
+  width: 0;
+  background: var(--secondary);
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+#nav ul li:nth-child(4)::after {
+  content: "";
+  height: 1px;
+  width: 0;
+  background: var(--secondary);
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+#nav ul li:nth-child(5)::after {
+  content: "";
+  height: 1px;
+  width: 0;
+  background: var(--secondary);
+  position: absolute;
+  left: 0;
+  bottom: -9px;
+  transition: 0.5s;
+}
+
+#nav ul li:hover::after {
+  width: 100%;
+}
+
+/* =============== Introduçao =============== */
+.introducao {
+  width: 80%;
+  flex-direction: row;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 160px 0;
+  margin: 0 auto;
+}
+
+.introducao_info {
+  display:flex ;
+  flex-direction: row;
+  width: 100%;
+  color: var(--terciario);
+}
+
+.introducao_info span {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.introducao_info h1 {
+  font-size: 43px;
+  line-height: 61px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.introducao_info p {
+  font-size: 18px;
+  line-height: 28px;
+  padding-bottom: 15px;
+}
+
+.introducao_info div img{
+  width: 150% !important;
+  margin-left: 100px;
+}
+ 
+.button {
+  display: inline-block;
+  padding: 15px 60px;
+  font-size: 1.1rem;
+  font-family: var(--fonte);
+  background: var(--secondary);
+  color: var(--terciario);
+  border: solid 1px var(--secondary);
+  border-radius: 5px;
+  transition: 0.5s;
+  margin-right: 10px;
+}
+
+.button:hover {
+  transform: translateX(3px) scale(1.1);
+}
+
+#nav button {
+  visibility: hidden;
+}
+
+/* =============== Social =============== */
+.social {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.social a {
+  color: var(--primary);
+  margin-right: 20px;
+  transition: 300ms;
+}
+
+/* =============== Sobre =============== */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+  padding: 50px 0 50px 0;
+  margin-bottom: 100px;
+}
+
+#linha{
+  margin: 10px;
+}
+
+.bg {
+  background-color:var(--secondary);
+  width: 100%;
+  height: 500px;
+}
+
+.container div h2 {
+  font-size: 30px;
+  font-weight: 900;
+  color: var(--terciario);
+}
+
+
+.container p {
+  margin-top: 10px;
+  color: var(--terciario);
+  font-size: 20px !important;
+  width: 100%;
+}
+
+/* =============== Habilidades =============== */
+#skill .container h2 {
+  margin-bottom: 100px;
+  font-weight: bold;
+  color: var(--terciario);
+}
+
+.svgs {
+  display: flex;
+  margin-bottom: 90px;
+  justify-content: space-around;
+}
+
+.svgs-c {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* =============== Projetos =============== */
+#projetos .container div h2{
+  text-align: center;
+}
+
+#projetos .container div p{
+  text-align: left;
+  width: 50%;
+  font-size: 100%;
+}
+
+#projetos .container div{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#projetos .container{
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#projetos .container div a{
+  color: var(--terciario);
+  background-color: var(--primary);
+  font-size: 100%;
+}
+
+/* =============== ButtonToTop =============== */
+#btnTop {
+  cursor: pointer;
+  position: fixed;
+  bottom: 30px;
+  border: 0;
+  right: 30px;
+  height: 32px;
+  width: 32px;
+  background: var(--secondary);
+  border-radius: 50%;
+  display: none;
+}
+
+#btnTop img {
+  width: 14px;
+  margin: 0 auto;
+}
+
+/* =============== Scroll =============== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary);
+  border-radius: 5px;
+}
+
+/* =============== Contato =============== */
+.container-contact {
+  transform: translateY(20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container-contact h2{
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: var(--terciario);
+}
+
+.container-contact p {
+  margin-bottom: 20px;
+  text-align: center;
+  width: 400px;
+}
+
+.container-contact a {
+  margin-bottom: 100px;
+}
+
+address a {
+  color: var(--terciario);
+}
+
+address a:hover {
+  text-decoration: underline;
+}
+
+/* =============== Roda Pé =============== */
+.container-footer {
+  background-color: var(--terciario);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container-footer .social {
+  margin: 0;
+}
+
+.footer p {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+/* =============== Mobile =============== */
+@media (max-width: 400px) {
+  #projetos .container div img{
+    width: 50% !important;
+  }
+  .footer p {
+    font-size: 30%;
+  }
+}
+@media (max-width: 1024px) {
+
+  #about .bg .container p{
+    font-size: 100% !important;
+  }
+
+  #projetos .container div p{
+    font-size: 15px !important;
+  }
+
+  .introducao_info div img{
+    display: none;
+  }
+}
+
+@media (max-width: 1250px) {
+
+  .introducao_info h1 {
+    font-size: 30px;
+  }
+
+  .introducao_info div img{
+    width: 100% !important;
+  }
+
+  .button{
+    padding: 10px 40px;
+  }
+
+  .svgs img, .svgs-c img {
+    width: 60px;
+  }
+}
+
+@media (max-width: 1450px) {
+  .introducao_info div img{
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 950px) {
+  .bg{
+    height: 900px;
+  }
+  #nav ul {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    right: 0px;
+    background-color: var(--terciario);
+    height: 0;
+    transition: 0.6s;
+    z-index: 1000;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  #skill .container h2 {
+    margin-bottom: 70px;
+  }
+
+  .container-contact p {
+    margin-bottom: 20px;
+    width: 300px;
+  }
+
+  .container {
+    margin-bottom: 10px;
+  }
+
+  #nav.active #menu {
+    height: calc(100vh - 60px);
+    visibility: visible;
+    overflow-y: hidden;
+  }
+
+  #menu li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    margin: 40px 2.3rem;
+    border-bottom: 1px solid var(--secondary);
+  }
+
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: var(--primary);
+    gap: 0.5rem;
+  }
+
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+
+  #hamburger::after,
+  #hamburger::before {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+  #nav button {
+    visibility: visible;
+  }
+
+  #nav ul li::after {
+    display: none;
+  }
+
+  .button {
+    padding: 10px 20px;
+    margin-top: 10px;
+  }
+}
